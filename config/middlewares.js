@@ -1,18 +1,22 @@
 module.exports = [
-  'strapi::logger',
+  'strapi::errors',
   {
     name: 'strapi::cors',
     config: {
       enabled: true,
-      origin: ['http://localhost:5173'], // your Vite dev server
+      origin: [
+        'http://localhost:5173',         
+        'https://pp-editor.zednex.com', 
+        'https://pp-front.zednex.com', 
+      ],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+      keepHeaderOnError: true,
     },
   },
-  'strapi::errors',
   'strapi::security',
-  'strapi::cors',
   'strapi::poweredBy',
+  'strapi::logger',
   'strapi::query',
   'strapi::body',
   'strapi::session',
