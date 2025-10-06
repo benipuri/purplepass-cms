@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_columns",
+  "info": {
+    "displayName": "Column"
+  },
+  "options": {},
+  "attributes": {
+    "className": {
+      "type": "string"
+    },
+    "groupId": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_rows",
+  "info": {
+    "displayName": "row"
+  },
+  "options": {},
+  "attributes": {
+    "className": {
+      "type": "string"
+    },
+    "groupId": {
+      "type": "string"
+    }
+  }
+}
